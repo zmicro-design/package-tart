@@ -122,7 +122,7 @@ install() {
   # log::info "[$(timestamp)][package][$name] installing ..."
   # os::install $source_bin_file $usr_bin_dir $name
 
-  os::brow install cirruslabs/cli/tart
+  os::brew install cirruslabs/cli/tart
   if [ "$?" != "0" ]; then
     log::error "[$(timestamp)][package][$name] failed to install tart."
     return 1
